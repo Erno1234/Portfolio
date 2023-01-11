@@ -311,6 +311,9 @@ td{
         grid-template-columns: 1fr;
     
     }
+    article p{
+        font-size: 12;
+    }
     article{
         overflow: hidden;
         grid-template-columns: 1fr;
