@@ -1,0 +1,2 @@
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[2177],{271045:(_,r,t)=>{try{0}catch(l){}var e={locale:"hu-HU",i18nStrings:void 0,plural:t(733383)};_.exports=e},733383:_=>{_.exports=function(_){return 1!=+_}}}]);
+//# sourceMappingURL=https://sm.pinimg.com/webapp/locale-hu_HU-inlined-js-b8e04753ee3145a2.mjs.map

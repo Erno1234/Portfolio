@@ -1,0 +1,328 @@
+*{box-sizing: border-box;}
+h1{
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+nav ul{
+    margin-left:5px;
+    text-decoration: none;
+}
+ul{
+    height: 40px;
+    max-height: 40px;
+    text-align: center;
+     display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+li{
+    text-decoration: none;
+    border:2px solid #45A29E;
+    padding-top: 10px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #45A29e;
+}
+body{
+    background-image: url(kepek/kezdolaphatter.jpg);
+}
+main{
+    display:grid;
+    grid-template-areas:
+                         "n n n"
+                         "h h h"
+                        "a as as"
+                        "f f f";
+    color:white;
+    margin:auto;
+    width:90%;
+    border-top: 2px solid white;
+    background-color: #0B0C10;
+}
+header{
+    display: grid;
+    margin:10px;
+    grid-area: h;
+}
+nav{
+    display: grid;
+    margin:10px;
+    grid-area: n;
+}
+
+article{
+    display:grid;
+    grid-area: a;
+}
+article h1{
+    color:#66fcf1;
+    text-align: left;
+    margin-left: 20px;
+}
+article p{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+aside{
+    margin:10px;
+    display:grid;
+    grid-area: as;
+}
+
+footer{
+    grid-area: f;
+    border:2px inset #45A29e; 
+    padding:20px;
+    text-align: center;
+}
+
+/*Galéria*/
+#kozep{
+    margin:auto;
+    max-width: 400px;
+    max-height: 300px;
+    overflow: hidden;
+}
+#kozep figure{
+    position: relative;
+    width: 400%;
+    margin:0%;
+    animation:15s animacio infinite ;
+}
+#kozep figure img{
+    float:right;
+    width: calc(100%/4);
+}
+@keyframes animacio{
+    0%{
+        right:0%;
+    }
+    20%{
+        right:100%;
+    }
+    40%{
+        right: 100%;
+    }
+    60%{
+        right: 200%;
+    }
+    80%{
+        right: 200%;
+    }
+    90%{
+        right:300%;
+    }
+    100%{
+        right: 300%;
+    }
+}
+/*Ürlap*/
+#urlapb{
+    background-image: url(kepek/urlapbody.jpg);
+}
+#urlap{
+    
+    margin-top: 50px;
+    background-image: url(kepek/urlaphatter.jpg);
+}
+#urlaplab{
+    border: 1px solid white;
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    width: 80%;
+    height:60px;
+    margin:auto;
+    color:red;
+    
+    
+    text-align: center;
+}
+#kuldes{
+    margin-left: 90px;
+}
+.adatok{
+    border:1px solid black;
+    background-color: whitesmoke;
+    margin-left: 90px;
+    
+}
+.adatok h3{
+    color:black;
+}
+form{
+    color:black;
+    
+}
+#hobbik{
+    border-top:1px solid white;
+    text-align: left;
+    color:white
+}
+#hobbik li{
+    text-align: left;
+    border: none;
+    background-color: #0B0C10;
+}
+
+#hobbi{
+    display:grid;
+    grid-template-areas:
+                         "n n n"
+                         "h h h"
+                         "has has has"
+                        "ha ha ha"
+                        
+                        "f f f";
+
+}
+
+
+#hobbia{
+    display:grid;
+    grid-area: ha;
+}
+#hobbias{
+    display:grid;
+    grid-area: has;
+}
+h4{
+    
+    color:#66fcf1;
+    margin:0px;
+}
+.bal{
+    padding-left: 10px;
+    margin:10px;
+}
+.jobb{
+    margin: 10px;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    text-align: right;
+}
+.jobb p{
+    margin: 0px;
+    padding-right: 5px;
+}
+#hobbia h4{
+    
+    margin-top: 5px;
+    text-align: center;
+}
+#hobbia h3{
+    margin-left: 10px;
+}
+.webprog img{
+    margin: 5px;
+    height: 150px;
+    width: 300px;
+}
+#munkaar{
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border: 2px solid #45A29e;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+#munkaar a{
+    padding: 5px;
+    margin: 5px;
+padding: 5px;
+background-color: #45A29E;
+color:white;
+margin: auto;
+text-decoration: none;
+}
+#munkaar div{
+    display: g;
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    border:3px inset #45A29E;
+    margin: auto;
+    margin: 5px;
+}
+#munka{
+    display:grid;
+    grid-template-areas:
+                         "n n n"
+                         "h h h"
+                        "ma ma ma"
+                        
+                        "f f f";
+
+}
+#munkaar{
+    display: grid;
+    grid-area: ma;
+}
+.webprog{
+    margin:20px
+}
+li:hover{
+    color:white; 
+    border: 1px solid white;
+    background-color: #45A29E;
+}
+li a:hover{
+    cursor:zoom-in;
+    color:white; 
+    
+}
+table{
+    overflow: hidden;
+    padding: 5px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+ 
+    
+
+}
+th{
+    border: 1px solid white;
+}
+td{
+    border:1px solid white;
+    
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        grid-template-areas:"h" 
+                            "n"
+                            "a" 
+                            "as" 
+                            "f"; 
+    }
+    
+    ul{
+        display: block;
+        grid-template-columns: 1fr;
+    
+    }
+    article{
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        }
+    iframe{
+        width:300px;
+        height: 200px;
+    }
+    #munkaar div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    
+}

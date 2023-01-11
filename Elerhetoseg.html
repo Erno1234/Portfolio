@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="stilus.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pálóci Ernő</title>
+</head>
+<body id="urlapb">
+    <h1>Elérhetőségek</h1>
+    <main id="urlap">
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="Rolam.html">Hobbi</a></li>
+                <li><a href="Munkaim.html">Munkáim</a></li>
+                <li><a href="Elerhetoseg.html">Elérhetőségek</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div class="adatok">
+                <h3>Adatok:</h3>
+            <form>
+                <label for="fname">Név:</label>
+                <input type='text' id="nev" required maxlength="40"><br><br>
+                <label for="fname">Email:</label>
+                <input type='email' id="email" required maxlength="40">
+            </form>
+            </div>
+            <br>
+            <div class="adatok">
+                <h3>Értékelés:</h3>
+                <form>
+                    <label for="fname">Tetszett az oldal?</label><br>
+                    <input type='radio' name='igen' value="igen">Igen
+                    <input type='radio' name='nem' value="nem">Nem
+                    <br>
+                    <br>
+                    <label for="fname">Mennyire értékelnéd az oldalt 1-től 10-ig?</label><br>
+                    <input type="range" name="ertekeles" id="ertekeles" min="1" max="10" value="1" step="1"  oninput="this.nextElementSibling.value = this.value">
+                    <output>1</output>
+                 </form>
+            </div>
+            <br>
+            <div class="adatok">
+                <h3>Fejlesztési javaslat:</h3>
+                <form>
+                    <label for="fname">Mivel bővítené az oldalt?</label><br>
+                    <textarea cols=40 rows=4></textarea><br>
+                    <label for="fname">Javaslat az oldal kinézetével kapcsolatban:</label><br>
+                    <textarea cols=40 rows=4></textarea><br>
+                    
+                </form>
+                <h3>Hiba jelzése:</h3>
+                <form>
+                    <label for="fname">Milyen hibát fedezett fel?</label><br>
+                    <textarea cols=40 rows=4></textarea>
+                </form>
+            </div>
+            <br>
+            <div id="kuldes">
+            <form>
+                <input type='submit'>
+                <input type='button' value='Törlés'>
+            </form>
+            </div>
+        </article>
+        <br>
+        <footer id="urlaplab"><div id="tajekoztato"><p>Az űrlap jelenleg nem működőképes!</p></div></footer>
+    </main>  
+</body>
+</html>
