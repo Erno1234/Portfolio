@@ -311,8 +311,11 @@ td{
         grid-template-columns: 1fr;
     
     }
+    aside p{
+        font-size: 12px;
+    }
     article p{
-        font-size: 12;
+        font-size: 12px;
     }
     article{
         overflow: hidden;
